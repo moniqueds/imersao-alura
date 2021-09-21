@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Calculadora de Média</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<head>
+  <title>Calculadora de Média</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="page-title">
+      Calculadora de Média</h1>
+    <p class="page-subtitle">
+      Descubra qual a sua média de nota de todas as provas!
+    <img id ='mainImg' src= "https://i.ibb.co/Y3TdY4k/Knowledge-01.png">
+    </p>
+    </div>
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.pngrepo.com/png/31035/180/calculator.png" alt="student" class="alura-logo">
+  </a>
+  </div>
+    <div id='mediaselect'>
+      <p><span for='mediafinal'>Informe qual a média necessaria para ser aprovada(o):</span></p>
+      <input type="number" max='10' min='0' step=".01" name="mediafinal" id="mediafinal" value="7" />
+      <div id='mediaalta'>Média muito alta!</div>
+    </div>
+    <form onsubmit="calcularMedia()" method="dialog">
+      <div class="alunoInfo">
+        <div>
+          <span for='name' id='spanName'>Nome da(o) aluna(o):</span>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div id='notas'>
+          <div>
+            <span>1º Bimestre:</span>
+            <input type="number" max='10' min='0' step=".01" name="nota1" id="nota1" placeholder='Digite a primeira nota' required>
+          </div>
+          <div>
+            <span>2º Bimestre:</span>
+            <input type="number" max='10' min='0' step=".01" name="nota2" id="nota2" placeholder='Digite a segunda nota' required>
+          </div>
+          <div>
+            <span>3º Bimestre:</span>
+            <input type="number" max='10' min='0' step=".01" name="nota3" id="nota3" placeholder='Digite a terceira nota' required>
+          </div>
+          <div>
+            <span>4º Bimestre:</span>
+            <input type="number" max='10' min='0' step=".01" name="nota4" id="nota4" placeholder='Digite a quarta nota' required>
+          </div>
+        </div>
+      </div>
+      <div>
+        <input type="submit" id='calcular' value="Calcular Média">
+      </div>
+    </form>
+    <div id="resultado">
+    </div>
+  </div>
+ </body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
